@@ -13,6 +13,7 @@ Features:
  * Type Checker: Deprecate the ``years`` unit denomination and raise a warning for it (or an error as experimental 0.5.0 feature).
  * Type Checker: Make literals (without explicit type casting) an error for tight packing as experimental 0.5.0 feature.
  * Type Checker: Warn about wildcard tuple assignments (this will turn into an error with version 0.5.0).
+ * Type Checker: Warn when ``keccak256``, ``sha256`` and ``ripemd160`` are not used with a single bytes argument (suggest to use ``abi.encodePacked(...)``). This will turn into an error with version 0.5.0.
 
 Bugfixes:
  * Type Checker: Show proper error when trying to ``emit`` a non-event.

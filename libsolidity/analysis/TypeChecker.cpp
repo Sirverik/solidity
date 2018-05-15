@@ -1763,8 +1763,8 @@ bool TypeChecker::visit(FunctionCall const& _functionCall)
 	if (functionType->takesSinglePackedBytesParameter())
 	{
 		string generalMessage =
-			"This function only accepts a single 'bytes' argument. Please use the "
-			"abi.* functions to encode the data.";
+			"This function only accepts a single 'bytes' argument. Please use "
+			"'abi.encodePacked(...)' or a similar function to encode the data.";
 
 		if (arguments.size() > 1)
 		{
