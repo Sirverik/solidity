@@ -17,7 +17,7 @@ Features:
 Bugfixes:
  * Type Checker: Show proper error when trying to ``emit`` a non-event.
  * Type Checker: Warn about empty tuple components (this will turn into an error with version 0.5.0).
-
+ * Type Checker: The ABI encoding functions are pure and thus can be used for constants.
 
 ### 0.4.23 (2018-04-19)
 
